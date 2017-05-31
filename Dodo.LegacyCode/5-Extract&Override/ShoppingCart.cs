@@ -1,4 +1,4 @@
-﻿namespace Dodo.LegacyCode
+﻿namespace Dodo.LegacyCode.ExtractAndOverride
 {
     public class ShoppingCart
     {

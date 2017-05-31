@@ -1,6 +1,6 @@
 using System;
 
-namespace Dodo.LegacyCode
+namespace Dodo.LegacyCode.ExtractAndOverride
 {
     public class Printer
     {
@@ -13,7 +13,7 @@ namespace Dodo.LegacyCode
             terminal.PrintLine("<<Shopping cart items>>");
 
             Console.WriteLine("-----Total--------");
-            Console.WriteLine($"-----{shoppingCart.TotalPrice}---------");
+            Console.WriteLine($"----- {shoppingCart.TotalPrice} ---------");
         }
     }
 }
