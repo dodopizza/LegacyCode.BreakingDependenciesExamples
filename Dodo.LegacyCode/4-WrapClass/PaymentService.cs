@@ -1,4 +1,4 @@
-﻿namespace Dodo.LegacyCode.WrapMethod
+﻿namespace Dodo.LegacyCode.WrapClass
 {
     public class PaymentService
     {

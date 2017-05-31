@@ -50,6 +50,10 @@
     <Compile Include="3-WrapMethod\Money.cs" />
     <Compile Include="3-WrapMethod\PaymentService.cs" />
     <Compile Include="3-WrapMethod\TimeEntry.cs" />
+    <Compile Include="4-WrapClass\Employee.cs" />
+    <Compile Include="4-WrapClass\Money.cs" />
+    <Compile Include="4-WrapClass\PaymentService.cs" />
+    <Compile Include="4-WrapClass\TimeEntry.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

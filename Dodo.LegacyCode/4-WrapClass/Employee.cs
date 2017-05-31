@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Dodo.LegacyCode.WrapMethod
+namespace Dodo.LegacyCode.WrapClass
 {
     public class Employee
     {
