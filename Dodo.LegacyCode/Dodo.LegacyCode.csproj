@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1-SproutMethod\Customer.cs" />
+    <Compile Include="1-SproutMethod\Order.cs" />
     <Compile Include="1-SproutMethod\OrderProcessor.cs" />
     <Compile Include="2-SproutClass\OfficeManager.cs" />
     <Compile Include="2-SproutClass\OfficeManagerReport.cs" />
