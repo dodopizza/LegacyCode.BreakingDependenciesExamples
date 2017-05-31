@@ -46,6 +46,10 @@
     <Compile Include="1-SproutMethod\OrderProcessor.cs" />
     <Compile Include="2-SproutClass\OfficeManager.cs" />
     <Compile Include="2-SproutClass\OfficeManagerReport.cs" />
+    <Compile Include="3-WrapMethod\Employee.cs" />
+    <Compile Include="3-WrapMethod\Money.cs" />
+    <Compile Include="3-WrapMethod\PaymentService.cs" />
+    <Compile Include="3-WrapMethod\TimeEntry.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
