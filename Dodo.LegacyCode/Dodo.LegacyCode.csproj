@@ -54,6 +54,9 @@
     <Compile Include="4-WrapClass\Money.cs" />
     <Compile Include="4-WrapClass\PaymentService.cs" />
     <Compile Include="4-WrapClass\TimeEntry.cs" />
+    <Compile Include="5-Extract&amp;Override\Printer.cs" />
+    <Compile Include="5-Extract&amp;Override\ShoppingCart.cs" />
+    <Compile Include="5-Extract&amp;Override\Terminal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
