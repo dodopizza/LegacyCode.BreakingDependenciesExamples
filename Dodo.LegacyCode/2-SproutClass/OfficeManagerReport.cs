@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Text;
 
 namespace Dodo.LegacyCode
@@ -6,14 +7,16 @@ namespace Dodo.LegacyCode
     {
         public string htmlStatement(OfficeManager officeManager)
         {
+            var records = GetDatabaseRecordsFor(officeManager);
+
             var result = new StringBuilder();
             result.AppendLine("<table>");
             var header = $"<h1>Office Manager Report for <em>{officeManager.Name}</em></h1>";
             result.AppendLine(header);
 
-            foreach (var item in officeManager.Items)
+            foreach (var record in records)
             {
-                result.AppendLine($"<p>Item - {item}</p>");
+                result.AppendLine($"<p>Record - {record} - </p>");
             }
 
             var footer = "<p>----------2017 (c)----------</p>";
@@ -21,6 +24,12 @@ namespace Dodo.LegacyCode
             result.AppendLine("</table>");
 
             return result.ToString();
+        }
+
+        private IEnumerable<string> GetDatabaseRecordsFor(OfficeManager officeManager)
+        {
+            // some complicated DB call to get records
+            return new List<string>();
         }
     }
 }
