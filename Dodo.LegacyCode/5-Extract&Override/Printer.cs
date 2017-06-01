@@ -6,24 +6,14 @@ namespace Dodo.LegacyCode.ExtractAndOverride
     {
         public void PrintReceipt(ShoppingCart shoppingCart)
         {
-            WriteLine("-----Receipt-------");
-            WriteLine("-------------------");
+            Console.WriteLine("-----Receipt-------");
+            Console.WriteLine("-------------------");
 
-            var terminal = CreateTerminal();
+            var terminal = new Terminal();
             terminal.PrintLine("<<Shopping cart items>>");
 
-            WriteLine("-----Total--------");
-            WriteLine($"----- {shoppingCart.TotalPrice} ---------");
-        }
-
-        protected virtual Terminal CreateTerminal()
-        {
-            return new Terminal();
-        }
-
-        protected virtual void WriteLine(string line)
-        {
-            Console.WriteLine(line);
+            Console.WriteLine("-----Total--------");
+            Console.WriteLine($"----- {shoppingCart.TotalPrice} ---------");
         }
     }
 }

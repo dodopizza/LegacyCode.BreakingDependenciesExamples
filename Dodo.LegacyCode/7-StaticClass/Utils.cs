@@ -8,15 +8,15 @@ namespace Dodo.LegacyCode
         {
             // ...
 
-            var formattedDateTime = new Utils().NewFormat(DateTime.UtcNow);
+            var formattedDateTime = Utils.Format(DateTime.UtcNow);
 
             // ...
         }
     }
 
-    public class Utils
+    public static class Utils
     {
-        public string NewFormat(DateTime dateTime)
+        public static string Format(DateTime dateTime)
         {
             return $"DateTime - {dateTime.ToLongTimeString()}";
         }

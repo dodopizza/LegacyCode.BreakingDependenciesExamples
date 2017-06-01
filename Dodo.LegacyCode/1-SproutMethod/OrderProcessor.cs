@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Runtime.Remoting.Messaging;
 
 namespace Dodo.LegacyCode
 {
@@ -14,7 +13,7 @@ namespace Dodo.LegacyCode
 
         public List<Order> GetAvailableOrdersFor(Customer customer)
         {
-            var result = GetFilteredOrders(customer, orders);
+            var result = new List<Order>();
 
             foreach (var order in result)
             {
@@ -24,20 +23,6 @@ namespace Dodo.LegacyCode
                 result.Add(order);
             }
 
-            return result;
-        }
-
-        public List<Order> GetFilteredOrders(Customer customer, List<Order> orders)
-        {
-            var result = new List<Order>();
-
-            foreach (var order in orders)
-            {
-                if (customer.HasOrder(order) && order.Price > 1)
-                {
-                    result.Add(order);
-                }
-            }
             return result;
         }
     }
