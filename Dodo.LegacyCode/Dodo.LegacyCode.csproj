@@ -58,7 +58,7 @@
     <Compile Include="5-Extract&amp;Override\Printer.cs" />
     <Compile Include="5-Extract&amp;Override\ShoppingCart.cs" />
     <Compile Include="5-Extract&amp;Override\Terminal.cs" />
-    <Compile Include="6-ParallelDesign\Contractor.cs" />
+    <Compile Include="6-ParallelDesign\ContractorLegacy.cs" />
     <Compile Include="7-StaticClass\Utils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

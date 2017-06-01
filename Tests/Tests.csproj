@@ -43,6 +43,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WhenPrintReceipt.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dodo.LegacyCode\Dodo.LegacyCode.csproj">
+      <Project>{B4D79842-12D4-4F7D-A55E-555BFB4FA410}</Project>
+      <Name>Dodo.LegacyCode</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -13,6 +13,20 @@ namespace Dodo.LegacyCode.WrapMethod
 
         public void Pay(List<TimeEntry> timeEntries, PaymentService paymentService)
         {
+            SendSms();
+            
+            DoPay(timeEntries, paymentService);
+
+            SendSms();
+        }
+
+        public void SendSms()
+        {
+            //...
+        }
+
+        private void DoPay(List<TimeEntry> timeEntries, PaymentService paymentService)
+        {
             var totalAmount = new Money();
             foreach (var entry in timeEntries)
             {

@@ -2,21 +2,21 @@ using System;
 
 namespace Dodo.LegacyCode
 {
-    class Presenter
+    public class Presenter
     {
         public void Show()
         {
             // ...
 
-            var formattedDateTime = Utils.Format(DateTime.UtcNow);
+            var formattedDateTime = new Utils().NewFormat(DateTime.UtcNow);
 
             // ...
         }
     }
 
-    public static class Utils
+    public class Utils
     {
-        public static string Format(DateTime dateTime)
+        public string NewFormat(DateTime dateTime)
         {
             return $"DateTime - {dateTime.ToLongTimeString()}";
         }

@@ -3,6 +3,27 @@ using System.Text;
 
 namespace Dodo.LegacyCode
 {
+    public interface IOfficeManagerReportGenerator
+    {
+        string Generate(OfficeManager officeManager);
+    }
+    
+    public class OfficeManagerReportFooterGenerator : IOfficeManagerReportGenerator
+    {
+        public string Generate(OfficeManager officeManager)
+        {
+            return "";
+        }
+    }
+
+    public class OfficeManagerReportHeader : IOfficeManagerReportGenerator
+    {
+        public string Generate(OfficeManager officeManager)
+        {
+            return $"<h1>Office Manager Report for <b>{officeManager.Name}</b></h1>";
+        }
+    }
+
     public class OfficeManagerReport
     {
         public string htmlStatement(OfficeManager officeManager)
@@ -11,7 +32,9 @@ namespace Dodo.LegacyCode
 
             var result = new StringBuilder();
             result.AppendLine("<table>");
-            var header = $"<h1>Office Manager Report for <em>{officeManager.Name}</em></h1>";
+            
+            var header = new OfficeManagerReportHeader().Generate(officeManager);
+            
             result.AppendLine(header);
 
             foreach (var record in records)

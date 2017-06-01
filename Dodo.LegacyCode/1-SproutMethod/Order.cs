@@ -6,5 +6,7 @@
         {
             // some logic here ...
         }
+
+        public int Price { get; private set; }
     }
 }

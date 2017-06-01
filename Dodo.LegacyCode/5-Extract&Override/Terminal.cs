@@ -4,7 +4,7 @@ namespace Dodo.LegacyCode.ExtractAndOverride
 {
     public class Terminal
     {
-        public void PrintLine(string message)
+        public virtual void PrintLine(string message)
         {
             Console.WriteLine(message);
         }
