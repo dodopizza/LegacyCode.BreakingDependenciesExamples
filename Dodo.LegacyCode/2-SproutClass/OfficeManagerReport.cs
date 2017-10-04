@@ -5,7 +5,7 @@ namespace Dodo.LegacyCode
 {
     public class OfficeManagerReport
     {
-        public string htmlStatement(OfficeManager officeManager)
+        public string BuildHtmlStatement(OfficeManager officeManager)
         {
             var records = GetDatabaseRecordsFor(officeManager);
 
